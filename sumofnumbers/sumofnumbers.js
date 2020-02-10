@@ -1,4 +1,4 @@
-let test = [1, 2, 3];
+const test = [1, 2, 3];
 
 function sumFor(lists) {
   let total = 0;
@@ -25,9 +25,7 @@ console.log(sumWhile(test));
 function sumRecursion(lists) {
   if (lists.length === 0) {
     return 0;
-  } else {
-    return lists[0] + sumRecursion(lists.slice(1, lists.length));
-  }
+  } return lists[0] + sumRecursion(lists.slice(1, lists.length));
 }
 
 console.log(sumRecursion(test));
